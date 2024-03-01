@@ -31,6 +31,13 @@
     border: 0.1px solid rgba(0, 0, 0, 0.1);
   }
 
+  .border {
+    border: 0.1px solid rgba(0, 0, 0, 0.1);
+  }
+  .inputText:focus {
+    border: 0.1px solid rgba(13, 211, 18, 0.9); /* Warna border yang diinginkan saat input difokuskan */
+  }
+
   .menuFixed {
     @apply fixed -top-1 z-50 flex w-full flex-row items-center justify-between bg-white px-2 py-3;
     animation: slideInFromBottom 0.5s ease-out;
@@ -39,52 +46,45 @@
   .menuDefault {
     @apply flex w-full flex-row items-center justify-between px-2 py-3;
   }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 
-  .border {
-    border: 0.1px solid rgba(0, 0, 0, 0.1);
-  }
-  .inputText:focus {
-    border: 0.1px solid rgba(13, 211, 18, 0.9); /* Warna border yang diinginkan saat input difokuskan */
-  }
-  @keyframes slideInFromBottom {
-    0% {
-      transform: translateY(-100%);
-      opacity: 0;
-    }
-    100% {
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+.custom-shadow {
+  position: relative;
+  box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
+  background-color: var(--NN0, #ffffff);
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 12px;
+}
+.slick-dots li button:before {
+  color: White;
+}
+.slick-dots li.slick-active button:before {
+  color: White !important;
+}
 
-  .custom-shadow {
-    position: relative;
-    box-shadow: 0 1px 6px 0 rgba(0, 0, 0, 0.12);
-    background-color: var(--NN0, #ffffff);
-    padding: 16px;
-    margin-bottom: 24px;
-    border-radius: 12px;
-  }
-  .slick-dots li button:before {
-    color: White;
-  }
-  .slick-dots li.slick-active button:before {
-    color: White !important;
-  }
+.drop-shadow {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
 
-  .drop-shadow {
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-  }
+.slick-slide {
+  padding: 0 4px;
+}
 
-  .slick-slide {
-    padding: 0 4px;
-  }
+/* .slick-list {
+  margin: 0 2em;
+} */
 
-  /* .slick-list {
-    margin: 0 2em;
-  } */
-
-  .slick-slide div {
-    outline: none;
-  }
+.slick-slide div {
+  outline: none;
 }
