@@ -9,7 +9,6 @@ import {
 } from "../../assets";
 import { useSpring, animated } from "react-spring";
 import { useState } from "react";
-import { SliderWrapperKategori } from "./styleSlideKategori";
 
 function Kategori() {
   const [Active, setActive] = useState(false);
@@ -68,31 +67,29 @@ function Kategori() {
 
   return (
     <div onMouseLeave={() => setActive(false)}>
-      <SliderWrapperKategori>
-        <Slider {...settings}>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori2} alt="Slide 2" className="rounded-lg outline-none" />
-          </div>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori3} alt="Slide 3" className="rounded-lg outline-none" />
-          </div>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori4} alt="Slide 4" className="rounded-lg outline-none" />
-          </div>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori1} alt="Slide 1" className="rounded-lg outline-none" />
-          </div>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori2} alt="Slide 2" className="rounded-lg outline-none" />
-          </div>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori3} alt="Slide 3" className="rounded-lg outline-none" />
-          </div>
-          <div className="boxKategori" onMouseEnter={() => setActive(true)}>
-            <img src={kategori4} alt="Slide 4" className="rounded-lg outline-none" />
-          </div>
-        </Slider>
-      </SliderWrapperKategori>
+      <Slider {...settings}>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori2} alt="Slide 2" className="rounded-lg outline-none" />
+        </div>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori3} alt="Slide 3" className="rounded-lg outline-none" />
+        </div>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori4} alt="Slide 4" className="rounded-lg outline-none" />
+        </div>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori1} alt="Slide 1" className="rounded-lg outline-none" />
+        </div>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori2} alt="Slide 2" className="rounded-lg outline-none" />
+        </div>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori3} alt="Slide 3" className="rounded-lg outline-none" />
+        </div>
+        <div className="boxKategori" onMouseEnter={() => setActive(true)}>
+          <img src={kategori4} alt="Slide 4" className="rounded-lg outline-none" />
+        </div>
+      </Slider>
     </div>
   );
 }

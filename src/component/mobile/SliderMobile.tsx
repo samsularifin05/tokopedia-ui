@@ -1,6 +1,6 @@
 import Slider from "react-slick";
-import { slider1, slider2, slider3, slider4, slider5 } from "./../../assets";
-import SliderWrapper from "./styledDost";
+import { slider1, slider2, slider3, slider4, slider5 } from "../../assets";
+import SliderWrapper from "../KategoriAndTopUp/styledDost";
 
 function SliderMobile() {
   const settings = {

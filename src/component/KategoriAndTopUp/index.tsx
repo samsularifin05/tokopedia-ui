@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Kategori from "./Kategori";
-import SlideMenu from "./SlideMenu";
+import SlideKategori from "./SlideKategori";
 
 const KategoriAndTopUp = () => {
   const [activeTab, setActiveTab] = useState(0); // State untuk menyimpan tab aktif
@@ -114,7 +114,7 @@ const KategoriAndTopUp = () => {
         </div>
       </div>
       <div className="mt-3">
-        <SlideMenu />
+        <SlideKategori />
       </div>
     </div>
   );

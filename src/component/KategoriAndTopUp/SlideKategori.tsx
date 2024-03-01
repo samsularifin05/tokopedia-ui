@@ -15,7 +15,7 @@ import {
 import { useSpring, animated } from "react-spring";
 import { useState } from "react";
 
-function SlideMenu() {
+function SlideKategori() {
   const [Active, setActive] = useState(false);
 
   // Animasi untuk menu mobile
@@ -134,4 +134,4 @@ function SlideMenu() {
   );
 }
 
-export default SlideMenu;
+export default SlideKategori;
