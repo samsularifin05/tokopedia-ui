@@ -1,0 +1,47 @@
+{
+  "name": "sliceing-05",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "lint": "eslint . --ext ts,tsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview",
+    "prettier": "npx prettier src test --check",
+    "prettier:fix": "npm run prettier -- --write"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.4",
+    "aos": "^2.3.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-slick": "^0.30.2",
+    "react-spring": "^9.7.3",
+    "slick-carousel": "^1.8.1",
+    "styled-components": "^6.1.8"
+  },
+  "devDependencies": {
+    "@types/aos": "^3.0.7",
+    "@types/node": "^20.11.17",
+    "@types/react": "^18.2.55",
+    "@types/react-dom": "^18.2.19",
+    "@types/react-slick": "^0.23.13",
+    "@typescript-eslint/eslint-plugin": "^6.21.0",
+    "@typescript-eslint/parser": "^6.21.0",
+    "@vitejs/plugin-react-swc": "^3.5.0",
+    "autoprefixer": "^10.4.17",
+    "cssnano": "^6.0.3",
+    "eslint": "^8.56.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-tailwindcss": "^3.14.2",
+    "postcss": "^8.4.35",
+    "prettier": "^3.2.5",
+    "prettier-plugin-tailwindcss": "^0.5.11",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5.2.2",
+    "vite": "^5.1.0",
+    "vite-plugin-compression": "^0.5.1",
+    "vite-plugin-environment": "^1.1.3"
+  }
+}
