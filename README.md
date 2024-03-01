@@ -1,3 +1,6 @@
+ ## Donation
+You can support Me On [Saweria](https://saweria.co/samsularifin05)
+
 Tokopedia Ui (REACT + TAILWIND)
 Tampilan Mobile
 
