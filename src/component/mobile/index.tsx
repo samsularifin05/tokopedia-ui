@@ -11,17 +11,14 @@ import {
   iconChavronDown,
   iconElectronic,
   iconFashion,
-  iconFeed,
   iconFilmnDanMusic,
   iconJam,
   iconKeuangan,
   iconLive,
   iconLocationActive,
   iconLonceng,
-  iconLove,
   iconMenu,
   iconMumpungMurah,
-  iconOfficialStore,
   iconPesan,
   iconPestaSeru,
   iconProfile,
@@ -36,9 +33,8 @@ import {
   iconTokopediaNow,
   iconTokpedFrama,
   iconTopUpDanTagihan,
-  iconTransaksi,
-  ramadanExtraSeru,
 } from "../../assets";
+import ButtonNavigation from "./ButtonNavigation";
 const MobileDesain = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -70,7 +66,7 @@ const MobileDesain = () => {
           <div className="relative mr-2 w-[15rem]">
             <input
               type="text"
-              className="inputTextSearch placeholder:text-14 text-14 w-full pl-8 pr-3"
+              className="inputTextSearch w-full pl-8 pr-3 text-14 placeholder:text-14"
               placeholder="Cari Di Tokopedia..."
             />
             <div className="pointer-events-none absolute inset-y-0 left-0 flex items-center pl-3">
@@ -87,7 +83,7 @@ const MobileDesain = () => {
         <div className="flex flex-row px-4">
           <div className="flex flex-row items-center gap-1">
             <img src={iconLocationActive} className="h-4 w-4" />
-            <div className="text-12 flex items-center">
+            <div className="flex items-center text-12">
               <p className="mr-1">Dikirim ke</p>
               <b>Jakarta Pusat</b>
               <img src={iconChavronDown} className="h-4 w-4" />
@@ -99,10 +95,10 @@ const MobileDesain = () => {
             <img src={iconProfile} className="h-8 w-8 rounded-full" />
             <div className="flex flex-col">
               <strong className="text-12">Hai, Samsul</strong>
-              <p className="text-color1 text-[10px]">Cek update di akunmu, yuk~</p>
+              <p className="text-[10px] text-color1">Cek update di akunmu, yuk~</p>
             </div>
           </div>
-          <button className="bg-color4 h-8 w-28 rounded-[10px] text-white"> Masuk </button>
+          <button className="h-8 w-28 rounded-[10px] bg-color4 text-white"> Masuk </button>
         </div>
       </div>
       <SliderMobile />
@@ -197,7 +193,7 @@ const MobileDesain = () => {
             </h1>
             <div className="flex flex-row gap-2">
               <p className="text-14">Berakhir Dalam</p>
-              <div className="bg-color3 text-12 flex items-center gap-1 rounded-full px-2 text-white">
+              <div className="flex items-center gap-1 rounded-full bg-color3 px-2 text-12 text-white">
                 <img src={iconJam} className="h-4 w-4" />
                 09:58:32
               </div>
@@ -209,28 +205,7 @@ const MobileDesain = () => {
         </div>
         <div className="h-screen"></div>
       </div>
-      <div className="xxl:w-[25rem] fixed bottom-0 flex h-12 w-full justify-between border bg-white px-5 py-1 shadow-lg md:w-[60%] lg:w-1/3 xl:w-[30%]">
-        <div className="flex flex-col items-center gap-1">
-          <img src={ramadanExtraSeru} className="h-6 w-6" />
-          <p className="text-color2 text-11"> Home </p>
-        </div>
-        <div className="flex flex-col items-center gap-1">
-          <img src={iconFeed} className="h-6 w-6" />
-          <p className="text-color1 text-11"> Feed </p>
-        </div>
-        <div className="flex flex-col items-center gap-1">
-          <img src={iconOfficialStore} className="h-6 w-6" />
-          <p className="text-color1 text-11"> Official Store </p>
-        </div>
-        <div className="flex flex-col items-center gap-1">
-          <img src={iconLove} className="h-6 w-6" />
-          <p className="text-color1 text-11"> Wishlist </p>
-        </div>
-        <div className="flex flex-col items-center gap-1">
-          <img src={iconTransaksi} className="h-6 w-6" />
-          <p className="text-color1 text-11"> Transaksi </p>
-        </div>
-      </div>
+      <ButtonNavigation />
     </>
   );
 };
